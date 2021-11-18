@@ -9,7 +9,6 @@ const Color nearlyBlue = Color(0xFF00B6F0);
 const Color nearlyBlack = Color(0xFF213333);
 const Color grey = Color(0xFF3A5160);
 const Color dark_grey = Color(0xFF313A44);
-var name = 'Raghav';
 const Color darkText = Color(0xFF253840);
 const Color darkerText = Color(0xFF17262A);
 const Color lightText = Color(0xFF4A6572);

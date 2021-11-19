@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 
 const Color nearlyWhite = Color(0xFFFAFAFA);
 const Color white = Color(0xFFFFFFFF);
-const Color background = Colors.black;
+const Color background = Color(0xFFC2FCF3);
 const Color nearlyDarkBlue = Color(0xFF2633C5);
 
 const Color nearlyBlue = Color(0xFF00B6F0);

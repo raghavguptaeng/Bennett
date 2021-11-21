@@ -35,8 +35,296 @@ class _mainScreenState extends State<mainScreen> {
                   ),
                 ),
                 Enrollment_and_electiveButton(),
-                SizedBox(height: 20,),
-                HomeDetailCard(height: height, width: width)
+                SizedBox(
+                  height: 20,
+                ),
+                HomeDetailCard(height: height, width: width),
+                SizedBox(
+                  height: 20,
+                ),
+                Text("Choose Your Electives",style: kSmallTextStyle.copyWith(fontSize: 25),),
+                Center(
+                  child: SizedBox(
+                    width: width,
+                    height: height,
+                    child: Center(
+                      child: GridView.count(
+                        primary: false,
+                        padding: const EdgeInsets.all(20),
+                        crossAxisSpacing: 15,
+                        mainAxisSpacing: 30,
+                        crossAxisCount: 2,
+                        childAspectRatio: 0.80,
+                        children: [
+                          Container(
+                            height: height * 0.50,
+                            width: width * 0.45,
+                            child: Stack(
+                              children: [
+                                Container(
+                                  width: width * 0.4,
+                                  height: height * 0.2,
+                                  padding: EdgeInsets.all(10),
+                                  decoration: BoxDecoration(
+                                    color: courseContainerColor.withOpacity(0.3),
+                                    borderRadius: BorderRadius.circular(10),
+                                  ),
+                                  child: Column(
+                                    crossAxisAlignment: CrossAxisAlignment.start,
+                                    mainAxisAlignment:
+                                        MainAxisAlignment.spaceBetween,
+                                    children: [
+                                      Text("Automata", style: courseTextStyle),
+                                      Text(
+                                        "CLE154GS",
+                                        style: courseTextStyle,
+                                      ),
+                                      Row(
+                                        mainAxisAlignment:
+                                            MainAxisAlignment.spaceEvenly,
+                                        children: [
+                                          Text(
+                                            " L - 3",
+                                            style: courseTextStyle.copyWith(
+                                                color: nearlyBlue),
+                                          ),
+                                          Text(
+                                            " T - 3",
+                                            style: courseTextStyle.copyWith(
+                                                color: nearlyBlue),
+                                          ),
+                                          Text(
+                                            " P - 3",
+                                            style: courseTextStyle.copyWith(
+                                                color: nearlyBlue),
+                                          ),
+                                        ],
+                                      ),
+                                      Text(
+                                        "Seats Offered: 250",
+                                        style: courseTextStyle,
+                                      )
+                                    ],
+                                  ),
+                                ),
+                                Align(
+                                    alignment: Alignment.bottomRight,
+                                    child: Container(
+                                      width: width * 0.12,
+                                      height: width * 0.12,
+                                      child: Icon(CupertinoIcons.bag),
+                                      decoration: BoxDecoration(
+                                        borderRadius:
+                                            BorderRadius.circular(100),
+                                        color: Colors.blue,
+                                      ),
+                                    ))
+                              ],
+                            ),
+                          ),
+                          Container(
+                            height: height * 0.50,
+                            width: width * 0.45,
+                            child: Stack(
+                              children: [
+                                Container(
+                                  width: width * 0.4,
+                                  height: height * 0.2,
+                                  padding: EdgeInsets.all(10),
+                                  decoration: BoxDecoration(
+                                    color: courseContainerColor.withOpacity(0.3),
+                                    borderRadius: BorderRadius.circular(10),
+                                  ),
+                                  child: Column(
+                                    crossAxisAlignment: CrossAxisAlignment.start,
+                                    mainAxisAlignment:
+                                    MainAxisAlignment.spaceBetween,
+                                    children: [
+                                      Text("Automata", style: courseTextStyle),
+                                      Text(
+                                        "CLE154GS",
+                                        style: courseTextStyle,
+                                      ),
+                                      Row(
+                                        mainAxisAlignment:
+                                        MainAxisAlignment.spaceEvenly,
+                                        children: [
+                                          Text(
+                                            " L - 3",
+                                            style: courseTextStyle.copyWith(
+                                                color: nearlyBlue),
+                                          ),
+                                          Text(
+                                            " T - 3",
+                                            style: courseTextStyle.copyWith(
+                                                color: nearlyBlue),
+                                          ),
+                                          Text(
+                                            " P - 3",
+                                            style: courseTextStyle.copyWith(
+                                                color: nearlyBlue),
+                                          ),
+                                        ],
+                                      ),
+                                      Text(
+                                        "Seats Offered: 250",
+                                        style: courseTextStyle,
+                                      )
+                                    ],
+                                  ),
+                                ),
+                                Align(
+                                    alignment: Alignment.bottomRight,
+                                    child: Container(
+                                      width: width * 0.12,
+                                      height: width * 0.12,
+                                      child: Icon(CupertinoIcons.bag),
+                                      decoration: BoxDecoration(
+                                        borderRadius:
+                                        BorderRadius.circular(100),
+                                        color: Colors.blue,
+                                      ),
+                                    ))
+                              ],
+                            ),
+                          ),
+                          Container(
+                            height: height * 0.50,
+                            width: width * 0.45,
+                            child: Stack(
+                              children: [
+                                Container(
+                                  width: width * 0.4,
+                                  height: height * 0.2,
+                                  padding: EdgeInsets.all(10),
+                                  decoration: BoxDecoration(
+                                    color: courseContainerColor.withOpacity(0.3),
+                                    borderRadius: BorderRadius.circular(10),
+                                  ),
+                                  child: Column(
+                                    crossAxisAlignment: CrossAxisAlignment.start,
+                                    mainAxisAlignment:
+                                    MainAxisAlignment.spaceBetween,
+                                    children: [
+                                      Text("Automata", style: courseTextStyle),
+                                      Text(
+                                        "CLE154GS",
+                                        style: courseTextStyle,
+                                      ),
+                                      Row(
+                                        mainAxisAlignment:
+                                        MainAxisAlignment.spaceEvenly,
+                                        children: [
+                                          Text(
+                                            " L - 3",
+                                            style: courseTextStyle.copyWith(
+                                                color: nearlyBlue),
+                                          ),
+                                          Text(
+                                            " T - 3",
+                                            style: courseTextStyle.copyWith(
+                                                color: nearlyBlue),
+                                          ),
+                                          Text(
+                                            " P - 3",
+                                            style: courseTextStyle.copyWith(
+                                                color: nearlyBlue),
+                                          ),
+                                        ],
+                                      ),
+                                      Text(
+                                        "Seats Offered: 250",
+                                        style: courseTextStyle,
+                                      )
+                                    ],
+                                  ),
+                                ),
+                                Align(
+                                    alignment: Alignment.bottomRight,
+                                    child: Container(
+                                      width: width * 0.12,
+                                      height: width * 0.12,
+                                      child: Icon(CupertinoIcons.bag),
+                                      decoration: BoxDecoration(
+                                        borderRadius:
+                                        BorderRadius.circular(100),
+                                        color: Colors.blue,
+                                      ),
+                                    ))
+                              ],
+                            ),
+                          ),
+                          Container(
+                            height: height * 0.50,
+                            width: width * 0.45,
+                            child: Stack(
+                              children: [
+                                Container(
+                                  width: width * 0.4,
+                                  height: height * 0.2,
+                                  padding: EdgeInsets.all(10),
+                                  decoration: BoxDecoration(
+                                    color: courseContainerColor.withOpacity(0.3),
+                                    borderRadius: BorderRadius.circular(10),
+                                  ),
+                                  child: Column(
+                                    crossAxisAlignment: CrossAxisAlignment.start,
+                                    mainAxisAlignment:
+                                    MainAxisAlignment.spaceBetween,
+                                    children: [
+                                      Text("Automata", style: courseTextStyle),
+                                      Text(
+                                        "CLE154GS",
+                                        style: courseTextStyle,
+                                      ),
+                                      Row(
+                                        mainAxisAlignment:
+                                        MainAxisAlignment.spaceEvenly,
+                                        children: [
+                                          Text(
+                                            " L - 3",
+                                            style: courseTextStyle.copyWith(
+                                                color: nearlyBlue),
+                                          ),
+                                          Text(
+                                            " T - 3",
+                                            style: courseTextStyle.copyWith(
+                                                color: nearlyBlue),
+                                          ),
+                                          Text(
+                                            " P - 3",
+                                            style: courseTextStyle.copyWith(
+                                                color: nearlyBlue),
+                                          ),
+                                        ],
+                                      ),
+                                      Text(
+                                        "Seats Offered: 250",
+                                        style: courseTextStyle,
+                                      )
+                                    ],
+                                  ),
+                                ),
+                                Align(
+                                    alignment: Alignment.bottomRight,
+                                    child: Container(
+                                      width: width * 0.12,
+                                      height: width * 0.12,
+                                      child: Icon(CupertinoIcons.bag),
+                                      decoration: BoxDecoration(
+                                        borderRadius:
+                                        BorderRadius.circular(100),
+                                        color: Colors.blue,
+                                      ),
+                                    ))
+                              ],
+                            ),
+                          ),
+                        ],
+                      ),
+                    ),
+                  ),
+                )
               ],
             ),
           ),
@@ -70,13 +358,14 @@ class HomeDetailCard extends StatelessWidget {
             children: [
               Column(
                 mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-                children: [
-                  totalSeatRow(),total_pref_filled()
-                ],
+                children: [totalSeatRow(), total_pref_filled()],
               ),
               Container(
-                  width: width*0.35,
-                  child: Donut(val1: 90,val2: 10,))
+                  width: width * 0.35,
+                  child: Donut(
+                    val1: 90,
+                    val2: 10,
+                  ))
             ],
           ),
         ),
@@ -86,7 +375,7 @@ class HomeDetailCard extends StatelessWidget {
 
   Container totalSeatRow() {
     return Container(
-      width: width*0.5,
+      width: width * 0.5,
       child: Row(
         children: [
           line,
@@ -107,17 +396,16 @@ class HomeDetailCard extends StatelessWidget {
               ),
               Row(
                 children: [
-                  Text('250',style: TextStyle(
-                    fontWeight:
-                    FontWeight.w600,
-                    fontSize: 16,
-                    color:darkerText,
-                  ),),
                   Text(
-                    'seats',
-                    textAlign: TextAlign.center,
-                    style: kSmallTextStyle
+                    '250',
+                    style: TextStyle(
+                      fontWeight: FontWeight.w600,
+                      fontSize: 16,
+                      color: darkerText,
+                    ),
                   ),
+                  Text('seats',
+                      textAlign: TextAlign.center, style: kSmallTextStyle),
                 ],
               )
             ],
@@ -129,7 +417,7 @@ class HomeDetailCard extends StatelessWidget {
 
   Container total_pref_filled() {
     return Container(
-      width: width*0.5,
+      width: width * 0.5,
       child: Row(
         children: [
           line2,
@@ -150,17 +438,16 @@ class HomeDetailCard extends StatelessWidget {
               ),
               Row(
                 children: [
-                  Text('150',style: TextStyle(
-                    fontWeight:
-                    FontWeight.w600,
-                    fontSize: 16,
-                    color:darkerText,
-                  ),),
                   Text(
-                      'seats',
-                      textAlign: TextAlign.center,
-                      style: kSmallTextStyle
+                    '150',
+                    style: TextStyle(
+                      fontWeight: FontWeight.w600,
+                      fontSize: 16,
+                      color: darkerText,
+                    ),
                   ),
+                  Text('seats',
+                      textAlign: TextAlign.center, style: kSmallTextStyle),
                 ],
               )
             ],
@@ -169,7 +456,6 @@ class HomeDetailCard extends StatelessWidget {
       ),
     );
   }
-
 }
 
 class Enrollment_and_electiveButton extends StatelessWidget {

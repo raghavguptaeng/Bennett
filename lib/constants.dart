@@ -42,6 +42,13 @@ var kSmallTextStyle = TextStyle(
       .withOpacity(0.5),
 );
 
+var courseTextStyle = TextStyle(
+    fontSize: 15,
+    fontWeight: FontWeight.bold,
+    fontStyle: FontStyle.italic,
+    color: grey
+);
+
 var container_odd_circularDecor = BoxDecoration(
     color: Colors.white,
     borderRadius: BorderRadius.only(

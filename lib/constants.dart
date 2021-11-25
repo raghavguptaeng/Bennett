@@ -38,7 +38,7 @@ var kSmallTextStyle = TextStyle(
   FontWeight.w600,
   fontSize: 12,
   letterSpacing: -0.2,
-  color:grey
+  color:nearlyBlack
       .withOpacity(0.5),
 );
 
@@ -46,7 +46,13 @@ var courseTextStyle = TextStyle(
     fontSize: 15,
     fontWeight: FontWeight.bold,
     fontStyle: FontStyle.italic,
-    color: grey
+    color: white
+);
+var courseTextStyle2 = TextStyle(
+    fontSize: 15,
+    fontWeight: FontWeight.bold,
+    fontStyle: FontStyle.italic,
+    color: nearlyBlack
 );
 
 var container_odd_circularDecor = BoxDecoration(

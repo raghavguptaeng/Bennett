@@ -4,6 +4,8 @@ import 'package:bennett/constants.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
+
+
 class mainScreen extends StatefulWidget {
   static String id = '/maionscreen';
   const mainScreen({Key? key}) : super(key: key);
@@ -12,7 +14,9 @@ class mainScreen extends StatefulWidget {
   State<mainScreen> createState() => _mainScreenState();
 }
 
-class _mainScreenState extends State<mainScreen> {
+class _mainScreenState extends State<mainScreen> 
+
+{
   @override
   Widget build(BuildContext context) {
     var height = MediaQuery.of(context).size.height;

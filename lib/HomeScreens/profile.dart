@@ -10,50 +10,53 @@ class _ProfileState extends State<Profile>
 {
   @override
    Widget build(BuildContext context){
-    return Scaffold(
-      backgroundColor:background,
-      body: ListView(
-        children: <Widget>[
-          _top(),
-          SizedBox(height: 20,),
-          Padding(padding: EdgeInsets.all(16),
-          child: Row(
-            crossAxisAlignment: CrossAxisAlignment.center,
-            mainAxisAlignment: MainAxisAlignment.spaceBetween,
-            children: <Widget>[
-              Text("Category",style: courseTextStyle2,),
-              Text("View All",style: kSmallTextStyle,),
-            ],
-          ),
-          ),
-          SizedBox(height: 20,),
-          Container(
-            height: 200,
-            child:GridView(
-              gridDelegate:SliverGridDelegateWithFixedCrossAxisCount(crossAxisCount: 3,childAspectRatio: 3/2),
+    return AnimatedContainer(
+      duration: Duration(milliseconds: 250),
+      child: Scaffold( 
+        backgroundColor:background,
+        body: ListView(
+          children: <Widget>[
+            _top(),
+            SizedBox(height: 20,),
+            Padding(padding: EdgeInsets.all(16),
+            child: Row(
+              crossAxisAlignment: CrossAxisAlignment.center,
+              mainAxisAlignment: MainAxisAlignment.spaceBetween,
               children: <Widget>[
-                _gridItem(Icons.airport_shuttle),
-                _gridItem(Icons.add_shopping_cart),
-                _gridItem(Icons.arrow_drop_down_circle),
-                _gridItem(Icons.bluetooth_searching),
-                _gridItem(Icons.add_location),
-                _gridItem(Icons.arrow_drop_down_circle),
+                Text("Category",style: headings,),
+                Text("View All",style: kSmallTextStyle,),
               ],
-              ),
-              ),
-              Padding(padding: EdgeInsets.all(16),
-              child: Row(
+            ),
+            ),
+            SizedBox(height: 20,),
+            Container(
+              height: 200,
+              child:GridView(
+                gridDelegate:SliverGridDelegateWithFixedCrossAxisCount(crossAxisCount: 3,childAspectRatio: 3/2),
                 children: <Widget>[
-                  Text("Latest",style: courseTextStyle2,)
+                  _gridItem(Icons.airport_shuttle),
+                  _gridItem(Icons.add_shopping_cart),
+                  _gridItem(Icons.arrow_drop_down_circle),
+                  _gridItem(Icons.bluetooth_searching),
+                  _gridItem(Icons.add_location),
+                  _gridItem(Icons.arrow_drop_down_circle),
                 ],
-              ),
-              ),
-              _cardItem(1),
-              _cardItem(2),
-              _cardItem(3),
-              _cardItem(4),
-        ],
-        ),   
+                ),
+                ),
+                Padding(padding: EdgeInsets.all(16),
+                child: Row(
+                  children: <Widget>[
+                    Text("Latest",style: headings,)
+                  ],
+                ),
+                ),
+                _cardItem(1),
+                _cardItem(2),
+                _cardItem(3),
+                _cardItem(4),
+          ],
+          ),   
+      ),
     );
    }
 
@@ -77,7 +80,7 @@ class _ProfileState extends State<Profile>
            Column(
              crossAxisAlignment: CrossAxisAlignment.start,
              children: <Widget>[
-               Text('Events',style: courseTextStyle2,),
+               Text('Events',style: headings,),
                SizedBox(height: 10,),
                Text('15 item',style: kSmallTextStyle,),
                
@@ -96,7 +99,7 @@ class _ProfileState extends State<Profile>
             icon,size:16,
             color: white,
           ),
-          backgroundColor: nearlyBlue.withOpacity(0.9),
+          backgroundColor: nearlyDarkBlue.withOpacity(0.9),
         ),
         SizedBox(height: 10,),
         Text("Birthday",style: kSmallTextStyle,)
@@ -109,7 +112,7 @@ class _ProfileState extends State<Profile>
       return Container(
         padding: EdgeInsets.all(16),
         decoration: BoxDecoration(
-          color: nearlyDarkBlue,
+          color: nearlyBlue,
         borderRadius:BorderRadius.only(
           bottomLeft: Radius.circular(30),
           bottomRight: Radius.circular(30),
@@ -121,12 +124,22 @@ class _ProfileState extends State<Profile>
             mainAxisAlignment: MainAxisAlignment.spaceBetween,
             children: <Widget>[
               Row(
+                mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: <Widget>[
-                  CircleAvatar(
-                    backgroundImage:AssetImage('assets/profile-img.jpg') ,
-                  ),
-                   SizedBox(width: 10,),
-                   Text("Hello user",style: courseTextStyle,),
+                  IconButton(onPressed: (){
+                   
+                  },
+                   icon: Icon(Icons.menu),
+                   color: white,
+                   ),
+                   Column(
+                     children: [
+                        Text("Hello user",style: courseTextStyle,),
+                     ],
+                   ),
+                
+                  //  SizedBox(width: 10,),
+                  //  Text("Hello user",style: courseTextStyle,),
                 ],
               ), 
               IconButton(
